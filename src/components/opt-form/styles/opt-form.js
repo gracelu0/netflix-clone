@@ -17,6 +17,16 @@ export const Input = styled.input`
   box-sizing: border-box;
 `;
 
+export const Label = styled.label`
+  font-size: 16px;
+  color: #8c8c8c;
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
+`;
+
 export const Button = styled.button`
   display: flex;
   align-items: center;
@@ -47,11 +57,10 @@ export const Button = styled.button`
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 740px) {
     height: 50px;
     font-size: 16px;
     margin-top: 20px;
-    font-weight: bold;
   }
 `;
 
@@ -60,9 +69,9 @@ export const Text = styled.p`
   color: white;
   text-align: center;
 
-  @media (max-width: 600px) {
-    font-size: 16px;
+  @media (max-width: 740px) {
     line-height: 22px;
+    max-width: 450px;
   }
 `;
 

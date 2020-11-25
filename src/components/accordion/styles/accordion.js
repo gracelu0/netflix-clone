@@ -18,7 +18,7 @@ export const Header = styled.div`
   justify-content: space-between;
   cursor: pointer;
   margin-bottom: 1px;
-  font-size: 26px;
+  font-size: 32px;
   font-weight: normal;
   background: #303030;
   padding: 0.8em 1.2em;
@@ -43,7 +43,7 @@ export const Body = styled.div`
   white-space: pre-wrap;
   user-select: none;
 
-  @media (max-width: 600px) {
+  @media (max-width: 740px) {
     font-size: 16px;
     line-height: 22px;
   }
@@ -57,7 +57,7 @@ export const Title = styled.h1`
   color: white;
   text-align: center;
 
-  @media (max-width: 600px) {
+  @media (max-width: 740px) {
     font-size: 36px;
   }
 `;
@@ -66,7 +66,7 @@ export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
   margin: auto;
-  max-width: 670px;
+  max-width: 850px;
   width: 100%;
 
   &:first-of-type {
