@@ -13,7 +13,7 @@ const config = {
   projectId: "netflix-824ac",
   storageBucket: "netflix-824ac.appspot.com",
   messagingSenderId: "584040732305",
-  appId: "1:584040732305:web:13939c559b1717f64f1130",
+  appId: "1:584040732305:web:13939c559b1717f64f1130"
 };
 
 const firebase = Firebase.initializeApp(config);

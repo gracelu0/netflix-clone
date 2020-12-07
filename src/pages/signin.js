@@ -9,6 +9,7 @@ import * as ROUTES from "../constants/routes";
 export default function Signin() {
   const history = useHistory();
   const { firebase } = useContext(FirebaseContext);
+
   const [emailAddress, setEmailAddress] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -18,9 +19,10 @@ export default function Signin() {
 
   const handleSignIn = (event) => {
     event.preventDefault();
+    console.log(emailAddress, password);
 
     //firebase
-    firebase
+    return firebase
       .auth()
       .signInWithEmailAndPassword(emailAddress, password)
       .then(() => {
@@ -55,7 +57,7 @@ export default function Signin() {
               value={password}
               onChange={({ target }) => setPassword(target.value)}
             />
-            <Form.Submit disabled={isInvalid} type="submit">
+            <Form.Submit disabled={isInvalid} type="submit" onClick={handleSignIn}>
               Sign In
             </Form.Submit>
           </Form.Base>
